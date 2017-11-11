@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sporty App</string>
+
+    <string-array name="Main">
+        <item>USZ</item>
+        <item>Events</item>
+        <item>Sport Partner</item>
+    </string-array>
+
+    <string-array name="Description">
+        <item>Description1</item>
+        <item>Description2</item>
+        <item>Description3</item>
+        <item>Description4</item>
+    </string-array>
+</resources>
