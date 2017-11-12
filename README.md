@@ -5,5 +5,5 @@ Main Functionalities:
 - [ ] Find Sport Partner
 
 Contact
-Cem Unuvar - cem_cagri.unuvar@mailbox.tu-dresden.de
-Baris Alp Yuncu - ...
+- Cem Unuvar - cem_cagri.unuvar@mailbox.tu-dresden.de
+- Baris Alp Yuncu - ...
