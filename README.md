@@ -1,8 +1,15 @@
 # Sporty Android-App - TU Dresden - ADMUC WS17/18
-Main Functionalities:
-- [ ] Register for courses and get updates from USZ TU Dresden
-- [ ] Find Sport Events Nearby
-- [ ] Find Sport Partner
+To-do:
+- [ ] Login-screen
+
+1) [ ] USZ TU Dresden
+    - [ ] USZ News
+    - [ ] Sport Offers
+    - [ ] Sport Venues
+    - [ ] Downloads (In-app browser)
+    - [ ] FB Page (optional)
+2) [ ] Find Sport Events Nearby
+3) [ ] Find Sport Partner
 
 Contact:
 - Cem Unuvar - cem_cagri.unuvar@mailbox.tu-dresden.de
