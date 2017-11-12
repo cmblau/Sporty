@@ -4,6 +4,6 @@ Main Functionalities:
 - [ ] Find Sport Events Nearby
 - [ ] Find Sport Partner
 
-Contact
+Contact:
 - Cem Unuvar - cem_cagri.unuvar@mailbox.tu-dresden.de
 - Baris Alp Yuncu - ...
