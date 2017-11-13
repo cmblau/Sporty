@@ -12,6 +12,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 
+import com.R;
+
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
