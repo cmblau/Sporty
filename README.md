@@ -1,4 +1,7 @@
 # Sporty Android-App - TU Dresden - ADMUC WS17/18
+
+![Alt text](/UI.jpg?raw=true "UI")
+
 To-do:
 - [ ] Login-screen
 
