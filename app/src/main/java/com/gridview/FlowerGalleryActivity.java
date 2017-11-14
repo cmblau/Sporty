@@ -58,42 +58,28 @@ public class FlowerGalleryActivity extends AppCompatActivity implements AdapterV
 
         //1st Item
         flower = new Flower();
-        flower.setFlowerName("Alyssum");
-        flower.setPhotoPath(R.drawable.alyssum);
+        flower.setFlowerName("USZ TU Dresden");
+        flower.setPhotoPath(R.drawable.volleyball);
         flowerData.add(flower);
 
         //2nd Item
         flower = new Flower();
-        flower.setFlowerName("Daisy");
-        flower.setPhotoPath(R.drawable.daisy);
+        flower.setFlowerName("Find Events");
+        flower.setPhotoPath(R.drawable.volleyball);
         flowerData.add(flower);
 
 
         //3rd Item
         flower = new Flower();
-        flower.setFlowerName("Jasmine");
-        flower.setPhotoPath(R.drawable.jasmine);
+        flower.setFlowerName("Find Sport Partner");
+        flower.setPhotoPath(R.drawable.volleyball);
         flowerData.add(flower);
 
 
         //4th Item
         flower = new Flower();
-        flower.setFlowerName("Lily");
-        flower.setPhotoPath(R.drawable.lily);
-        flowerData.add(flower);
-
-
-        //5th Item
-        flower = new Flower();
-        flower.setFlowerName("Poppy");
-        flower.setPhotoPath(R.drawable.poppy);
-        flowerData.add(flower);
-
-
-        //6th Item
-        flower = new Flower();
-        flower.setFlowerName("Rose");
-        flower.setPhotoPath(R.drawable.rose);
+        flower.setFlowerName("Invitations");
+        flower.setPhotoPath(R.drawable.volleyball);
         flowerData.add(flower);
 
         return flowerData;
