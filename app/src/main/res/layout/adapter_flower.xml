@@ -12,22 +12,23 @@
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
         android:background="@drawable/grid_row_border"
-        android:padding="1dp"
-        android:topLeftRadius="1dp"
-        android:topRightRadius="1dp"
-
-
-         />
+        android:padding="@dimen/cellText_padding"
+        android:topLeftRadius="0dp"
+        android:cropToPadding="true"
+        android:topRightRadius="0dp"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/elementMargin"
+        android:scaleType="centerCrop"
         android:gravity="center"
         android:background="@color/overlay"
         android:padding="@dimen/cellText_padding"
+        android:cropToPadding="true"
+        android:topLeftRadius="0dp"
         android:textColor="@color/textColor"
         android:textSize="@dimen/cellText_textSize" />
 
