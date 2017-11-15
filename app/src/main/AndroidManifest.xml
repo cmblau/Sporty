@@ -10,7 +10,7 @@ package="com">
     android:label="@string/app_name"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <!-- everything starts with an activity-->
+    <!-- everything starts with this activity-->
     <activity android:name=".gridview.FlowerGalleryActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
