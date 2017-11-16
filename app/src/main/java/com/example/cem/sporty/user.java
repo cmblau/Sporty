@@ -5,12 +5,12 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.util.LinkedList;
-
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
 /**
  * Created by balpy on 16.11.2017.
+ * User Class
  */
 
 public class user {
@@ -20,6 +20,54 @@ public class user {
     public String email;
     public LinkedList bookMarkedEventsList;
     public LinkedList myEventsList;
+
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public LinkedList getBookMarkedEventsList() {
+        return bookMarkedEventsList;
+    }
+
+    public void setBookMarkedEventsList(LinkedList bookMarkedEventsList) {
+        this.bookMarkedEventsList = bookMarkedEventsList;
+    }
+
+    public LinkedList getMyEventsList() {
+        return myEventsList;
+    }
+
+    public void setMyEventsList(LinkedList myEventsList) {
+        this.myEventsList = myEventsList;
+    }
 
     public user(int userID, String userName, String password_, String email, LinkedList bookMarkedEventsList, LinkedList myEventsList) {
         this.userID = userID;
