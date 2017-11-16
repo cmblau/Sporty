@@ -5,6 +5,8 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.spec.InvalidKeySpecException;
 import java.util.LinkedList;
+import java.util.List;
+
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
@@ -18,9 +20,57 @@ public class user {
     public String userName;
     public String password;
     public String email;
-    public LinkedList bookMarkedEventsList;
-    public LinkedList myEventsList;
+    public LinkedList<String> bookMarkedEventsList;
+    public LinkedList<String> myEventsList;
+    public LinkedList<String> interests;
 
+    public user(int userID, String userName, String password_, String email, LinkedList interests) {
+        this.userID = userID;
+        this.userName = userName;
+        //this.password = get_SHA_256_SecurePassword(password_, salt);
+        this.password = generateStrongPasswordHash(password_);
+        this.email = email;
+        this.bookMarkedEventsList =  new LinkedList<String>();
+        this.myEventsList = new LinkedList<String>();
+        this.interests = interests;
+    }
+    public boolean add2myEventsList(String item){
+        try{
+            myEventsList.add(item);
+            return true;
+        }catch(Exception e){
+            System.err.println("Failed to Add item to the BookMarkedEventsList: "+e.getMessage());
+            return false;
+        }
+    }
+    public boolean removeFromMyEventsList(String item){
+        try{
+            myEventsList.remove(item);
+            return true;
+        }catch (Exception e){
+            System.err.println("Failed to Add item to the BookMarkedEventsList: "+e.getMessage());
+            return false;
+        }
+    }
+    public boolean add2BookMarkedEventsList(String item){
+
+        try{
+            bookMarkedEventsList.add(item);
+            return true;
+        }catch(Exception e){
+            System.err.println("Failed to Add item to the BookMarkedEventsList: "+e.getMessage());
+            return false;
+        }
+    }
+    public boolean removeFromBookMarkedEventList(String item){
+        try{
+            bookMarkedEventsList.remove(item);
+            return true;
+        }catch (Exception e){
+            System.err.println("Failed to Add item to the BookMarkedEventsList: "+e.getMessage());
+            return false;
+        }
+    }
     public int getUserID() {
         return userID;
     }
@@ -69,15 +119,6 @@ public class user {
         this.myEventsList = myEventsList;
     }
 
-    public user(int userID, String userName, String password_, String email, LinkedList bookMarkedEventsList, LinkedList myEventsList) {
-        this.userID = userID;
-        this.userName = userName;
-        //this.password = get_SHA_256_SecurePassword(password_, salt);
-        this.password= generateStrongPasswordHash(password_);
-        this.email = email;
-        this.bookMarkedEventsList = bookMarkedEventsList;
-        this.myEventsList = myEventsList;
-    }
     private static String generateStrongPasswordHash(String password){
         int iterations = 1000;
         char[] chars = password.toCharArray();
