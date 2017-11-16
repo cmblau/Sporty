@@ -1,28 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="com">
+    package="com">
 
-<application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:supportsRtl="true"
-    android:theme="@style/AppTheme">
-    <!-- everything starts with this activity-->
-    <activity android:name=".gridview.FlowerGalleryActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".google.firebase.quickstart.auth.ChooserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-    </activity>
-    <activity android:name=".example.cem.sporty.MainActivity">
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
+		<activity android:name=".gridview.FlowerGalleryActivity">
+
+		</activity>
+		<activity android:name=".example.cem.sporty.MainActivity">
 
 
-    </activity>
-</application>
+		</activity>
+		
+        <activity
+            android:name=".google.firebase.quickstart.auth.CustomAuthActivity"
+            android:label="@string/label_custom_auth" />
+        <activity
+            android:name=".google.firebase.quickstart.auth.GoogleSignInActivity"
+            android:label="@string/label_google_sign_in" />
+        <activity
+            android:name=".google.firebase.quickstart.auth.FacebookLoginActivity"
+            android:label="@string/label_facebook_login" />
+        <activity
+            android:name=".google.firebase.quickstart.auth.EmailPasswordActivity"
+            android:label="@string/label_emailpassword"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".google.firebase.quickstart.auth.PhoneAuthActivity"
+            android:label="@string/label_phone_auth" />
+        <activity
+            android:name=".google.firebase.quickstart.auth.AnonymousAuthActivity"
+            android:label="@string/label_anonymous_auth" />
+        <activity
+            android:name=".google.firebase.quickstart.auth.TwitterLoginActivity"
+            android:label="@string/label_twitter_login" />
+        <activity
+            android:name=".google.firebase.quickstart.auth.FirebaseUIActivity"
+            android:label="@string/label_firebase_ui" />
+    </application>
 
 </manifest>

@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1034045440561:android:672b8e818a313d47",
+        "mobilesdk_app_id": "1:1034045440561:android:32d8d52e2b9e19bf",
         "android_client_info": {
-          "package_name": "com.sporty.sporty"
+          "package_name": "com.example.cem.sporty"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "1034045440561-h9rrbu8c0kmk6begj7h66ttjmg32at9g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cem.sporty",
+            "certificate_hash": "803800e2f828ef4effa53602075b976d001aad81"
+          }
+        },
         {
           "client_id": "1034045440561-n5abil2ovqcpgjoia9iu4b2hk8fb6j06.apps.googleusercontent.com",
           "client_type": 3
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034045440561-n5abil2ovqcpgjoia9iu4b2hk8fb6j06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
@@ -39,17 +52,17 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1034045440561:android:32d8d52e2b9e19bf",
+        "mobilesdk_app_id": "1:1034045440561:android:87fcb66cc6ca320a",
         "android_client_info": {
-          "package_name": "com.example.cem.sporty"
+          "package_name": "com.google.firebase.quickstart.auth"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1034045440561-h9rrbu8c0kmk6begj7h66ttjmg32at9g.apps.googleusercontent.com",
+          "client_id": "1034045440561-q0cogh7b5kjbef5rbpfpac2ktobf92d1.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.cem.sporty",
+            "package_name": "com.google.firebase.quickstart.auth",
             "certificate_hash": "803800e2f828ef4effa53602075b976d001aad81"
           }
         },

@@ -7,4 +7,8 @@
     <dimen name="cellText_padding">1dp</dimen>
     <dimen name="elementMargin">2dp</dimen>
     <dimen name="cellText_textSize">16sp</dimen>
+	<dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+    <dimen name="field_width_standard">160dp</dimen>
 </resources>
