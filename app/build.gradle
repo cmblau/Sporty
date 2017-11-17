@@ -8,8 +8,9 @@ android {
 
     defaultConfig {
         applicationId "com.google.firebase.quickstart.auth"
-        minSdkVersion 14
+        minSdkVersion 16
         targetSdkVersion 26
+        resConfigs "auto"
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
@@ -37,7 +38,7 @@ android {
         // Build variant with minSdk 14, excludes Facebook and FirebaseUI libraries.
         minSdkIcs {
             dimension "minSdkVersion"
-            minSdkVersion 14
+            minSdkVersion 16
         }
 
     }
@@ -48,6 +49,9 @@ configurations.all {
 }
 
 dependencies {
+
+    compile 'com.google.firebase:firebase-core:11.6.0'
+
     compile 'com.android.support:multidex:1.0.2'
 
     compile 'com.android.support:appcompat-v7:26.1.0'
@@ -60,6 +64,7 @@ dependencies {
 
     // Google Sign In SDK (only required for Google Sign In)
     compile 'com.google.android.gms:play-services-auth:11.6.0'
+    compile 'com.firebaseui:firebase-ui-auth:3.1.0'
 
     // Firebase UI
     // Used in FirebaseUIActivity. The FirebaseUI-Android library has a minSdk level of 16
