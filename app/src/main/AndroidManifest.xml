@@ -18,14 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		
-		<activity android:name=".gridview.FlowerGalleryActivity">
 
-		</activity>
-		<activity android:name=".example.cem.sporty.MainActivity">
+        <activity android:name=".gridview.FlowerGalleryActivity">
+
+        </activity>
+        <activity android:name=".example.cem.sporty.MainActivity">
 
 
-		</activity>
+        </activity>
 		
         <activity
             android:name=".google.firebase.quickstart.auth.CustomAuthActivity"

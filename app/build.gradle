@@ -18,7 +18,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -66,6 +66,9 @@ dependencies {
     compile 'com.google.android.gms:play-services-auth:11.6.0'
     compile 'com.firebaseui:firebase-ui-auth:3.1.0'
 
+    // Required only if Facebook login support is required
+    compile 'com.facebook.android:facebook-login:4.27.0'
+
     // Firebase UI
     // Used in FirebaseUIActivity. The FirebaseUI-Android library has a minSdk level of 16
     // so this library is only included in the minSdkJellybean variant.
@@ -87,6 +90,8 @@ dependencies {
 
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     androidTestCompile 'com.android.support.test:runner:0.5'
+
+    testCompile 'junit:junit:4.12'
 }
 
 apply plugin: 'com.google.gms.google-services'
