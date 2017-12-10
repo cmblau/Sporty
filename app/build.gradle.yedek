@@ -51,18 +51,18 @@ dependencies {
 
     // ...
 
-    implementation 'com.google.firebase:firebase-auth:11.6.0'
+    implementation 'com.google.firebase:firebase-auth:11.6.2'
     compile 'com.firebaseui:firebase-ui-auth:3.1.0'
 
     // Required only if Facebook login support is required
     compile('com.facebook.android:facebook-android-sdk:4.27.0')
-    compile 'com.google.android.gms:play-services-base:11.6.0'
+    compile 'com.google.android.gms:play-services-base:11.6.2'
 	compile 'com.android.support:animated-vector-drawable:26.1.0'
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.google.firebase:firebase-core:11.6.0'
+    implementation 'com.google.firebase:firebase-core:11.6.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
@@ -70,10 +70,10 @@ dependencies {
     compile 'com.android.support:design:26.1.0'
 	
 	// Firebase Authentication
-    compile 'com.google.firebase:firebase-auth:11.6.0'
+    compile 'com.google.firebase:firebase-auth:11.6.2'
 
     // Google Sign In SDK (only required for Google Sign In)
-    compile 'com.google.android.gms:play-services-auth:11.6.0'
+    compile 'com.google.android.gms:play-services-auth:11.6.2'
 
     // Firebase UI
     // Used in FirebaseUIActivity. The FirebaseUI-Android library has a minSdk level of 16

@@ -11,12 +11,9 @@
         android:name="android.support.multidex.MultiDexApplication"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".google.firebase.quickstart.auth.ChooserActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".google.firebase.quickstart.auth.ChooserActivity">
+
         </activity>
 
         <activity android:name=".gridview.FlowerGalleryActivity">
@@ -32,14 +29,23 @@
             android:label="@string/label_custom_auth" />
         <activity
             android:name=".google.firebase.quickstart.auth.GoogleSignInActivity"
-            android:label="@string/label_google_sign_in" />
-        <activity
-            android:name=".google.firebase.quickstart.auth.FacebookLoginActivity"
-            android:label="@string/label_facebook_login" />
+            android:label="@string/label_google_sign_in">
+
+        </activity>
         <activity
             android:name=".google.firebase.quickstart.auth.EmailPasswordActivity"
             android:label="@string/label_emailpassword"
-            android:windowSoftInputMode="stateAlwaysHidden" />
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".google.firebase.quickstart.auth.FacebookLoginActivity"
+            android:label="@string/label_facebook_login" />
+
         <activity
             android:name=".google.firebase.quickstart.auth.PhoneAuthActivity"
             android:label="@string/label_phone_auth" />
